@@ -1,40 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project title="cakephp-thumber" version="2.9.1">
   <partials/>
-  <file path="Utility/ThumbManager.php" generated-path="Utility.ThumbManager.html" hash="f8d99e65303b84902af33663a3900c59" package="Default">
+  <file path="Utility/ThumbManager.php" generated-path="Utility.ThumbManager.html" hash="9c6a4c7fa985b3fd1d09c7b516d27d42" package="Default">
     <docblock line="0">
-      <description>This file is part of cakephp-thumber.</description>
-      <long-description>Licensed under The MIT License
-For full copyright and license information, please see the LICENSE.txt
-Redistributions of files must retain the above copyright notice.</long-description>
-      <tag name="copyright" line="0" description="Copyright (c) Mirko Pagliai"/>
-      <tag name="link" line="0" description="https://github.com/mirko-pagliai/cakephp-thumber" link="https://github.com/mirko-pagliai/cakephp-thumber"/>
-      <tag name="license" line="0" description="MIT License" link="https://opensource.org/licenses/mit-license.php"/>
-      <tag name="since" line="0" description="1.3.0"/>
+      <description></description>
+      <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
     </docblock>
     <namespace-alias name="Plugin">\Cake\Core\Plugin</namespace-alias>
     <namespace-alias name="Filesystem">\Symfony\Component\Filesystem\Filesystem</namespace-alias>
     <namespace-alias name="BaseThumbManager">\Thumber\ThumbManager</namespace-alias>
-    <class final="false" abstract="false" namespace="Thumber\Cake\Utility" line="23" package="Default">
+    <class final="false" abstract="false" namespace="Thumber\Cake\Utility" line="24" package="Default">
       <extends>\Thumber\ThumbManager</extends>
       <name>ThumbManager</name>
       <full_name>\Thumber\Cake\Utility\ThumbManager</full_name>
-      <docblock line="23">
+      <docblock line="24">
         <description>A utility to manage thumbnails</description>
         <long-description></long-description>
-        <tag name="package" line="23" description="Default"/>
+        <tag name="package" line="24" description="Default"/>
       </docblock>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="Thumber\Cake\Utility" line="30" package="Default">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Thumber\Cake\Utility" line="31" package="Default">
         <name>resolveFilePath</name>
         <full_name>\Thumber\Cake\Utility\ThumbManager::resolveFilePath()</full_name>
-        <docblock line="30">
+        <docblock line="31">
           <description>Internal method to resolve a relative path, returning a full path</description>
           <long-description></long-description>
-          <tag name="param" line="30" description="&lt;p&gt;Partial path&lt;/p&gt;" type="string" variable="$path">
+          <tag name="param" line="31" description="&lt;p&gt;Partial path&lt;/p&gt;" type="string" variable="$path">
             <type>string</type>
           </tag>
-          <tag name="return" line="30" description="" type="string">
+          <tag name="return" line="31" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
@@ -44,22 +38,22 @@ Redistributions of files must retain the above copyright notice.</long-descripti
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Thumber\Cake\Utility" line="53" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Thumber\Cake\Utility" line="54" package="Default">
         <name>get</name>
         <full_name>\Thumber\Cake\Utility\ThumbManager::get()</full_name>
-        <docblock line="53">
+        <docblock line="54">
           <description>Gets all thumbnails that have been generated from an image path</description>
           <long-description></long-description>
-          <tag name="param" line="53" description="&lt;p&gt;Path of the original image&lt;/p&gt;" type="string" variable="$path">
+          <tag name="param" line="54" description="&lt;p&gt;Path of the original image&lt;/p&gt;" type="string" variable="$path">
             <type>string</type>
           </tag>
-          <tag name="param" line="53" description="&lt;p&gt;Whether results should be sorted&lt;/p&gt;" type="boolean" variable="$sort">
+          <tag name="param" line="54" description="&lt;p&gt;Whether results should be sorted&lt;/p&gt;" type="boolean" variable="$sort">
             <type>boolean</type>
           </tag>
-          <tag name="return" line="53" description="" type="array">
+          <tag name="return" line="54" description="" type="array">
             <type>array</type>
           </tag>
-          <tag name="uses" line="53" description="" link="\Thumber\Cake\Utility\ThumbManager::resolveFilePath()"/>
+          <tag name="uses" line="54" description="" link="\Thumber\Cake\Utility\ThumbManager::resolveFilePath()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$path</name>
@@ -73,512 +67,72 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         </argument>
       </method>
     </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
   </file>
-  <file path="View/Helper/ThumbHelper.php" generated-path="View.Helper.ThumbHelper.html" hash="def906de70ec1df6f7971c049ad20a64" package="Default">
+  <file path="View/Helper/ThumbHelper.php" generated-path="View.Helper.ThumbHelper.html" hash="f7e5f16519adcdc2ea86c35dfe597d4f" package="Default">
     <docblock line="0">
-      <description>This file is part of cakephp-thumber.</description>
-      <long-description>Licensed under The MIT License
-For full copyright and license information, please see the LICENSE.txt
-Redistributions of files must retain the above copyright notice.</long-description>
-      <tag name="copyright" line="0" description="Copyright (c) Mirko Pagliai"/>
-      <tag name="link" line="0" description="https://github.com/mirko-pagliai/cakephp-thumber" link="https://github.com/mirko-pagliai/cakephp-thumber"/>
-      <tag name="license" line="0" description="MIT License" link="https://opensource.org/licenses/mit-license.php"/>
-      <tag name="see" line="0" description="" link="https://github.com/mirko-pagliai/cakephp-thumber/wiki/How-to-use-the-helper"/>
+      <description></description>
+      <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
     </docblock>
-    <namespace-alias name="BadMethodCallException">\BadMethodCallException</namespace-alias>
-    <namespace-alias name="Helper">\Cake\View\Helper</namespace-alias>
-    <namespace-alias name="InvalidArgumentException">\InvalidArgumentException</namespace-alias>
-    <namespace-alias name="ThumbCreator">\Thumber\Cake\Utility\ThumbCreator</namespace-alias>
-    <class final="false" abstract="false" namespace="Thumber\Cake\View\Helper" line="34" package="Default">
-      <extends>\Cake\View\Helper</extends>
-      <name>ThumbHelper</name>
-      <full_name>\Thumber\Cake\View\Helper\ThumbHelper</full_name>
-      <docblock line="34">
-        <description>Thumb Helper.</description>
-        <long-description>This helper allows you to generate thumbnails.</long-description>
-        <tag name="package" line="34" description="Default"/>
-      </docblock>
-      <property static="false" visibility="public" namespace="Thumber\Cake\View\Helper" line="40" package="Default">
-        <name>$helpers</name>
-        <full_name>\Thumber\Cake\View\Helper\ThumbHelper::$helpers</full_name>
-        <default>array('Html')</default>
-        <docblock line="40">
-          <description>Helpers</description>
-          <long-description></long-description>
-          <tag name="var" line="40" description="" type="array" variable="">
-            <type>array</type>
-          </tag>
-        </docblock>
-      </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Thumber\Cake\View\Helper" line="59" package="Default">
-        <name>__call</name>
-        <full_name>\Thumber\Cake\View\Helper\ThumbHelper::__call()</full_name>
-        <docblock line="59">
-          <description>Magic method. It dynamically calls all other methods.</description>
-          <long-description>Each method takes these arguments:
- - $path Path of the image from which to create the thumbnail. It can be
-     a relative path (to APP/webroot/img), a full path or a remote url;
- - $params Parameters for creating the thumbnail;
- - $options Array of HTML attributes for the `img` element.</long-description>
-          <tag name="param" line="59" description="&lt;p&gt;Method to invoke&lt;/p&gt;" type="string" variable="$name">
-            <type>string</type>
-          </tag>
-          <tag name="param" line="59" description="&lt;p&gt;Array of params for the method&lt;/p&gt;" type="array" variable="$params">
-            <type>array</type>
-          </tag>
-          <tag name="return" line="59" description="" type="string">
-            <type>string</type>
-          </tag>
-          <tag name="see" line="59" description="" link="https://github.com/mirko-pagliai/cakephp-thumber/wiki/How-to-use-the-helper"/>
-          <tag name="since" line="59" description="1.4.0"/>
-          <tag name="throws" line="59" description="" type="\InvalidArgumentException">
-            <type>\InvalidArgumentException</type>
-          </tag>
-          <tag name="uses" line="59" description="" link="\Thumber\Cake\View\Helper\ThumbHelper::isUrlMethod()"/>
-          <tag name="uses" line="59" description="" link="\Thumber\Cake\View\Helper\ThumbHelper::runUrlMethod()"/>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$name</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$params</name>
-          <default></default>
-          <type>array</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="Thumber\Cake\View\Helper" line="78" package="Default">
-        <name>isUrlMethod</name>
-        <full_name>\Thumber\Cake\View\Helper\ThumbHelper::isUrlMethod()</full_name>
-        <docblock line="78">
-          <description>Checks is a method name is an "Url" method.</description>
-          <long-description>This means that the last characters of the method name are "Url".
-
-Example: `cropUrl` is an "Url" method. `crop` is not.</long-description>
-          <tag name="param" line="78" description="&lt;p&gt;Method name&lt;/p&gt;" type="string" variable="$name">
-            <type>string</type>
-          </tag>
-          <tag name="return" line="78" description="" type="boolean">
-            <type>boolean</type>
-          </tag>
-          <tag name="since" line="78" description="1.4.0"/>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$name</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="Thumber\Cake\View\Helper" line="96" package="Default">
-        <name>runUrlMethod</name>
-        <full_name>\Thumber\Cake\View\Helper\ThumbHelper::runUrlMethod()</full_name>
-        <docblock line="96">
-          <description>Runs an "Url" method and returns the url generated by the method</description>
-          <long-description></long-description>
-          <tag name="param" line="96" description="&lt;p&gt;Method name&lt;/p&gt;" type="string" variable="$name">
-            <type>string</type>
-          </tag>
-          <tag name="param" line="96" description="&lt;p&gt;Path of the image from which to create the thumbnail.&#10;It can be a relative path (to APP/webroot/img), a full path or a remote&#10;url&lt;/p&gt;" type="string" variable="$path">
-            <type>string</type>
-          </tag>
-          <tag name="param" line="96" description="&lt;p&gt;Parameters for creating the thumbnail&lt;/p&gt;" type="array" variable="$params">
-            <type>array</type>
-          </tag>
-          <tag name="param" line="96" description="&lt;p&gt;Array of HTML attributes for the &lt;code&gt;img&lt;/code&gt; element&lt;/p&gt;" type="array" variable="$options">
-            <type>array</type>
-          </tag>
-          <tag name="return" line="96" description="Thumbnail url" type="string">
-            <type>string</type>
-          </tag>
-          <tag name="since" line="96" description="1.4.0"/>
-          <tag name="throws" line="96" description="" type="\BadMethodCallException">
-            <type>\BadMethodCallException</type>
-          </tag>
-          <tag name="uses" line="96" description="" link="\Thumber\Cake\View\Helper\ThumbHelper::isUrlMethod()"/>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$name</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$path</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$params</name>
-          <default>array()</default>
-          <type>array</type>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$options</name>
-          <default>array()</default>
-          <type>array</type>
-        </argument>
-      </method>
-      <method final="false" static="false" visibility="public" line="34">
-        <name>crop</name>
-        <docblock>
-          <description>Crops the image, cutting out a rectangular part of the image</description>
-          <long-description/>
-          <tag name="magic" line="34"/>
-          <tag name="return" line="34" type="">
-            <type/>
-          </tag>
-          <tag name="method" line="34" description="Crops the image, cutting out a rectangular part of the image" method_name="crop"/>
-        </docblock>
-      </method>
-      <method final="false" static="false" visibility="public" line="34">
-        <name>cropUrl</name>
-        <docblock>
-          <description>As for the `crop()` method, but this only returns the url</description>
-          <long-description/>
-          <tag name="magic" line="34"/>
-          <tag name="return" line="34" type="">
-            <type/>
-          </tag>
-          <tag name="method" line="34" description="As for the `crop()` method, but this only returns the url" method_name="cropUrl"/>
-        </docblock>
-      </method>
-      <method final="false" static="false" visibility="public" line="34">
-        <name>fit</name>
-        <docblock>
-          <description>Resizes the image, combining cropping and resizing to format image in a smart way. It will find the best fitting aspect ratio on the current image automatically, cut it out and resize it to the given dimension</description>
-          <long-description/>
-          <tag name="magic" line="34"/>
-          <tag name="return" line="34" type="">
-            <type/>
-          </tag>
-          <tag name="method" line="34" description="Resizes the image, combining cropping and resizing to format image in a smart way. It will find the best fitting aspect ratio on the current image automatically, cut it out and resize it to the given dimension" method_name="fit"/>
-        </docblock>
-      </method>
-      <method final="false" static="false" visibility="public" line="34">
-        <name>fitUrl</name>
-        <docblock>
-          <description>As for the `fit()` method, but this only returns the url</description>
-          <long-description/>
-          <tag name="magic" line="34"/>
-          <tag name="return" line="34" type="">
-            <type/>
-          </tag>
-          <tag name="method" line="34" description="As for the `fit()` method, but this only returns the url" method_name="fitUrl"/>
-        </docblock>
-      </method>
-      <method final="false" static="false" visibility="public" line="34">
-        <name>resize</name>
-        <docblock>
-          <description>Resizes the image</description>
-          <long-description/>
-          <tag name="magic" line="34"/>
-          <tag name="return" line="34" type="">
-            <type/>
-          </tag>
-          <tag name="method" line="34" description="Resizes the image" method_name="resize"/>
-        </docblock>
-      </method>
-      <method final="false" static="false" visibility="public" line="34">
-        <name>resizeUrl</name>
-        <docblock>
-          <description>As for the `resize()` method, but this only returns the url</description>
-          <long-description/>
-          <tag name="magic" line="34"/>
-          <tag name="return" line="34" type="">
-            <type/>
-          </tag>
-          <tag name="method" line="34" description="As for the `resize()` method, but this only returns the url" method_name="resizeUrl"/>
-        </docblock>
-      </method>
-      <method final="false" static="false" visibility="public" line="34">
-        <name>resizeCanvas</name>
-        <docblock>
-          <description>Resizes the boundaries of the current image to given width and height. An anchor can be defined to determine from what point of the image the resizing is going to happen. Set the mode to relative to add or subtract the given width or height to the actual image dimensions. You can also pass a background color for the emerging area of the image</description>
-          <long-description/>
-          <tag name="magic" line="34"/>
-          <tag name="return" line="34" type="">
-            <type/>
-          </tag>
-          <tag name="method" line="34" description="Resizes the boundaries of the current image to given width and height. An anchor can be defined to determine from what point of the image the resizing is going to happen. Set the mode to relative to add or subtract the given width or height to the actual image dimensions. You can also pass a background color for the emerging area of the image" method_name="resizeCanvas"/>
-        </docblock>
-      </method>
-      <method final="false" static="false" visibility="public" line="34">
-        <name>resizeCanvasUrl</name>
-        <docblock>
-          <description>As for the `resizeCanvas()` method, but this only returns the url</description>
-          <long-description/>
-          <tag name="magic" line="34"/>
-          <tag name="return" line="34" type="">
-            <type/>
-          </tag>
-          <tag name="method" line="34" description="As for the `resizeCanvas()` method, but this only returns the url" method_name="resizeCanvasUrl"/>
-        </docblock>
-      </method>
-    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
   </file>
-  <file path="Command/ClearAllCommand.php" generated-path="Command.ClearAllCommand.html" hash="68a81c5df18904a7d53562d55c6e531f" package="Default">
+  <file path="Command/ClearAllCommand.php" generated-path="Command.ClearAllCommand.html" hash="f338ff7f68a4ff0fc8a267a71f1ceb86" package="Default">
     <docblock line="0">
-      <description>This file is part of cakephp-thumber.</description>
-      <long-description>Licensed under The MIT License
-For full copyright and license information, please see the LICENSE.txt
-Redistributions of files must retain the above copyright notice.</long-description>
-      <tag name="copyright" line="0" description="Copyright (c) Mirko Pagliai"/>
-      <tag name="link" line="0" description="https://github.com/mirko-pagliai/cakephp-thumber" link="https://github.com/mirko-pagliai/cakephp-thumber"/>
-      <tag name="license" line="0" description="MIT License" link="https://opensource.org/licenses/mit-license.php"/>
-      <tag name="since" line="0" description="1.7.0"/>
+      <description></description>
+      <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
     </docblock>
-    <namespace-alias name="Arguments">\Cake\Console\Arguments</namespace-alias>
-    <namespace-alias name="ConsoleIo">\Cake\Console\ConsoleIo</namespace-alias>
-    <namespace-alias name="ConsoleOptionParser">\Cake\Console\ConsoleOptionParser</namespace-alias>
-    <namespace-alias name="Exception">\Exception</namespace-alias>
-    <namespace-alias name="Command">\MeTools\Console\Command</namespace-alias>
-    <namespace-alias name="ThumbManager">\Thumber\Cake\Utility\ThumbManager</namespace-alias>
-    <class final="false" abstract="false" namespace="Thumber\Cake\Command" line="26" package="Default">
-      <extends>\MeTools\Console\Command</extends>
-      <name>ClearAllCommand</name>
-      <full_name>\Thumber\Cake\Command\ClearAllCommand</full_name>
-      <docblock line="26">
-        <description>Clears all thumbnails</description>
-        <long-description></long-description>
-        <tag name="package" line="26" description="Default"/>
-      </docblock>
-      <property static="false" visibility="public" namespace="Thumber\Cake\Command" line="32" package="Default">
-        <name>$ThumbManager</name>
-        <full_name>\Thumber\Cake\Command\ClearAllCommand::$ThumbManager</full_name>
-        <default></default>
-        <docblock line="32">
-          <description>A `ThumbManager` instance</description>
-          <long-description></long-description>
-          <tag name="var" line="32" description="" type="\Thumber\Cake\Utility\ThumbManager" variable="">
-            <type>\Thumber\Cake\Utility\ThumbManager</type>
-          </tag>
-        </docblock>
-      </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Thumber\Cake\Command" line="39" package="Default">
-        <name>initialize</name>
-        <full_name>\Thumber\Cake\Command\ClearAllCommand::initialize()</full_name>
-        <docblock line="39">
-          <description>Hook method invoked by CakePHP when a command is about to be executed</description>
-          <long-description></long-description>
-          <tag name="return" line="39" description="" type="void">
-            <type>void</type>
-          </tag>
-          <tag name="uses" line="39" description="" link="\Thumber\Cake\Command\ClearAllCommand::$ThumbManager"/>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="Thumber\Cake\Command" line="49" package="Default">
-        <name>buildOptionParser</name>
-        <full_name>\Thumber\Cake\Command\ClearAllCommand::buildOptionParser()</full_name>
-        <docblock line="49">
-          <description>Hook method for defining this command's option parser</description>
-          <long-description></long-description>
-          <tag name="param" line="49" description="&lt;p&gt;The parser to be defined&lt;/p&gt;" type="\Cake\Console\ConsoleOptionParser" variable="$parser">
-            <type>\Cake\Console\ConsoleOptionParser</type>
-          </tag>
-          <tag name="return" line="49" description="" type="\Cake\Console\ConsoleOptionParser">
-            <type>\Cake\Console\ConsoleOptionParser</type>
-          </tag>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$parser</name>
-          <default></default>
-          <type>\Cake\Console\ConsoleOptionParser</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Thumber\Cake\Command" line="61" package="Default">
-        <name>execute</name>
-        <full_name>\Thumber\Cake\Command\ClearAllCommand::execute()</full_name>
-        <docblock line="61">
-          <description>Clears all thumbnails</description>
-          <long-description></long-description>
-          <tag name="param" line="61" description="&lt;p&gt;The command arguments&lt;/p&gt;" type="\Cake\Console\Arguments" variable="$args">
-            <type>\Cake\Console\Arguments</type>
-          </tag>
-          <tag name="param" line="61" description="&lt;p&gt;The console io&lt;/p&gt;" type="\Cake\Console\ConsoleIo" variable="$io">
-            <type>\Cake\Console\ConsoleIo</type>
-          </tag>
-          <tag name="return" line="61" description="The exit code or null for success" type="integer|null">
-            <type>integer</type>
-            <type>null</type>
-          </tag>
-          <tag name="uses" line="61" description="" link="\Thumber\Cake\Command\ClearAllCommand::$ThumbManager"/>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$args</name>
-          <default></default>
-          <type>\Cake\Console\Arguments</type>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$io</name>
-          <default></default>
-          <type>\Cake\Console\ConsoleIo</type>
-        </argument>
-      </method>
-    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
   </file>
-  <file path="TestSuite/TestCase.php" generated-path="TestSuite.TestCase.html" hash="9d65a9a5cd287d4fa356efe52cc67266" package="Default">
+  <file path="TestSuite/TestCase.php" generated-path="TestSuite.TestCase.html" hash="8634be99bd04b899aaa0884fd65039bd" package="Default">
     <docblock line="0">
-      <description>This file is part of cakephp-thumber.</description>
-      <long-description>Licensed under The MIT License
-For full copyright and license information, please see the LICENSE.txt
-Redistributions of files must retain the above copyright notice.</long-description>
-      <tag name="copyright" line="0" description="Copyright (c) Mirko Pagliai"/>
-      <tag name="link" line="0" description="https://github.com/mirko-pagliai/cakephp-thumber" link="https://github.com/mirko-pagliai/cakephp-thumber"/>
-      <tag name="license" line="0" description="MIT License" link="https://opensource.org/licenses/mit-license.php"/>
+      <description></description>
+      <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
     </docblock>
-    <namespace-alias name="BaseTestCase">\MeTools\TestSuite\TestCase</namespace-alias>
-    <namespace-alias name="ThumbCreator">\Thumber\Cake\Utility\ThumbCreator</namespace-alias>
-    <namespace-alias name="TestTrait">\Thumber\TestSuite\TestTrait</namespace-alias>
-    <class final="false" abstract="true" namespace="Thumber\Cake\TestSuite" line="22" package="Default">
-      <extends>\MeTools\TestSuite\TestCase</extends>
-      <name>TestCase</name>
-      <full_name>\Thumber\Cake\TestSuite\TestCase</full_name>
-      <docblock line="22">
-        <description>TestCase class</description>
-        <long-description></long-description>
-        <tag name="package" line="22" description="Default"/>
-      </docblock>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Thumber\Cake\TestSuite" line="34" package="Default">
-        <name>assertThumbUrl</name>
-        <full_name>\Thumber\Cake\TestSuite\TestCase::assertThumbUrl()</full_name>
-        <docblock line="34">
-          <description>Asserts for a valid thumbnail url</description>
-          <long-description></long-description>
-          <tag name="param" line="34" description="&lt;p&gt;Thumbnail url&lt;/p&gt;" type="string" variable="$url">
-            <type>string</type>
-          </tag>
-          <tag name="param" line="34" description="&lt;p&gt;The failure message that will be appended to the&#10; generated message&lt;/p&gt;" type="string" variable="$message">
-            <type>string</type>
-          </tag>
-          <tag name="return" line="34" description="" type="void">
-            <type>void</type>
-          </tag>
-          <tag name="since" line="34" description="1.4.0"/>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$url</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$message</name>
-          <default>''</default>
-          <type>string</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="Thumber\Cake\TestSuite" line="47" package="Default">
-        <name>getThumbCreatorInstance</name>
-        <full_name>\Thumber\Cake\TestSuite\TestCase::getThumbCreatorInstance()</full_name>
-        <docblock line="47">
-          <description>Returns an instance of `ThumbCreator`</description>
-          <long-description></long-description>
-          <tag name="param" line="47" description="&lt;p&gt;Path of the image from which to create the&#10;thumbnail. It can be a relative path (to APP/webroot/img), a full path&#10;or a remote url&lt;/p&gt;" type="string|null" variable="$path">
-            <type>string</type>
-            <type>null</type>
-          </tag>
-          <tag name="return" line="47" description="" type="\Thumber\Cake\Utility\ThumbCreator">
-            <type>\Thumber\Cake\Utility\ThumbCreator</type>
-          </tag>
-          <tag name="since" line="47" description="1.5.1"/>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$path</name>
-          <default>null</default>
-          <type>string|null</type>
-        </argument>
-      </method>
-    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
   </file>
-  <file path="TestSuite/IntegrationTestTrait.php" generated-path="TestSuite.IntegrationTestTrait.html" hash="14e608cfdfb5aa170f6ff5ed53b87218" package="Default">
+  <file path="Plugin.php" generated-path="Plugin.html" hash="9fc67979730c851b507e312fcb7976ea" package="Default">
     <docblock line="0">
-      <description>This file is part of cakephp-thumber.</description>
-      <long-description>Licensed under The MIT License
-For full copyright and license information, please see the LICENSE.txt
-Redistributions of files must retain the above copyright notice.</long-description>
-      <tag name="copyright" line="0" description="Copyright (c) Mirko Pagliai"/>
-      <tag name="link" line="0" description="https://github.com/mirko-pagliai/cakephp-thumber" link="https://github.com/mirko-pagliai/cakephp-thumber"/>
-      <tag name="license" line="0" description="MIT License" link="https://opensource.org/licenses/mit-license.php"/>
-      <tag name="since" line="0" description="1.7.0"/>
+      <description></description>
+      <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
     </docblock>
-    <namespace-alias name="CakeIntegrationTestTrait">\Cake\TestSuite\IntegrationTestTrait</namespace-alias>
-    <trait namespace="Thumber\Cake\TestSuite" line="21" package="Default">
-      <name>IntegrationTestTrait</name>
-      <full_name>\Thumber\Cake\TestSuite\IntegrationTestTrait</full_name>
-      <docblock line="21">
-        <description>A trait intended to make integration tests of your controllers easier</description>
-        <long-description></long-description>
-        <tag name="package" line="21" description="Default"/>
-      </docblock>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Thumber\Cake\TestSuite" line="34" package="Default">
-        <name>assertContentType</name>
-        <full_name>\Thumber\Cake\TestSuite\IntegrationTestTrait::assertContentType()</full_name>
-        <docblock line="34">
-          <description>Asserts content type</description>
-          <long-description></long-description>
-          <tag name="param" line="34" description="&lt;p&gt;The content-type to check for&lt;/p&gt;" type="string" variable="$type">
-            <type>string</type>
-          </tag>
-          <tag name="param" line="34" description="&lt;p&gt;The failure message that will be appended to the&#10; generated message&lt;/p&gt;" type="string" variable="$message">
-            <type>string</type>
-          </tag>
-          <tag name="return" line="34" description="" type="void">
-            <type>void</type>
-          </tag>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$type</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$message</name>
-          <default>''</default>
-          <type>string</type>
-        </argument>
-      </method>
-    </trait>
-  </file>
-  <file path="Plugin.php" generated-path="Plugin.html" hash="29779da9aae34c64a91060096b16e7aa" package="Default">
-    <docblock line="0">
-      <description>This file is part of cakephp-thumber.</description>
-      <long-description>Licensed under The MIT License
-For full copyright and license information, please see the LICENSE.txt
-Redistributions of files must retain the above copyright notice.</long-description>
-      <tag name="copyright" line="0" description="Copyright (c) Mirko Pagliai"/>
-      <tag name="link" line="0" description="https://github.com/mirko-pagliai/cakephp-thumber" link="https://github.com/mirko-pagliai/cakephp-thumber"/>
-      <tag name="license" line="0" description="MIT License" link="https://opensource.org/licenses/mit-license.php"/>
-      <tag name="since" line="0" description="1.5.0"/>
-      <tag name="package" line="0" description="Default"/>
-    </docblock>
+    <namespace-alias name="CommandCollection">\Cake\Console\CommandCollection</namespace-alias>
     <namespace-alias name="BasePlugin">\Cake\Core\BasePlugin</namespace-alias>
     <namespace-alias name="ClearAllCommand">\Thumber\Cake\Command\ClearAllCommand</namespace-alias>
     <namespace-alias name="ClearCommand">\Thumber\Cake\Command\ClearCommand</namespace-alias>
-    <class final="false" abstract="false" namespace="Thumber\Cake" line="23" package="Default">
+    <class final="false" abstract="false" namespace="Thumber\Cake" line="25" package="Default">
       <extends>\Cake\Core\BasePlugin</extends>
       <name>Plugin</name>
       <full_name>\Thumber\Cake\Plugin</full_name>
-      <docblock line="23">
+      <docblock line="25">
         <description>Plugin class</description>
         <long-description></long-description>
-        <tag name="package" line="23" description="Default"/>
+        <tag name="package" line="25" description="Default"/>
       </docblock>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Thumber\Cake" line="31" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Thumber\Cake" line="33" package="Default">
         <name>console</name>
         <full_name>\Thumber\Cake\Plugin::console()</full_name>
-        <docblock line="31">
+        <docblock line="33">
           <description>Add console commands for the plugin</description>
           <long-description></long-description>
-          <tag name="param" line="31" description="&lt;p&gt;The command collection to update&lt;/p&gt;" type="\Cake\Console\CommandCollection" variable="$commands">
+          <tag name="param" line="33" description="&lt;p&gt;The command collection to update&lt;/p&gt;" type="\Cake\Console\CommandCollection" variable="$commands">
             <type>\Cake\Console\CommandCollection</type>
           </tag>
-          <tag name="return" line="31" description="" type="\Cake\Console\CommandCollection">
+          <tag name="return" line="33" description="" type="\Cake\Console\CommandCollection">
             <type>\Cake\Console\CommandCollection</type>
           </tag>
-          <tag name="since" line="31" description="1.7.1"/>
+          <tag name="since" line="33" description="1.7.1"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$commands</name>
@@ -587,70 +141,65 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         </argument>
       </method>
     </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
   </file>
-  <file path="Http/Exception/ThumbNotFoundException.php" generated-path="Http.Exception.ThumbNotFoundException.html" hash="bf7f0177f062fec5a12c5b07c4adcd9e" package="Default">
+  <file path="Http/Exception/ThumbNotFoundException.php" generated-path="Http.Exception.ThumbNotFoundException.html" hash="1d20fdf3dfcb9556ee1bd695693021a5" package="Default">
     <docblock line="0">
-      <description>This file is part of cakephp-thumber.</description>
-      <long-description>Licensed under The MIT License
-For full copyright and license information, please see the LICENSE.txt
-Redistributions of files must retain the above copyright notice.</long-description>
-      <tag name="copyright" line="0" description="Copyright (c) Mirko Pagliai"/>
-      <tag name="link" line="0" description="https://github.com/mirko-pagliai/cakephp-thumber" link="https://github.com/mirko-pagliai/cakephp-thumber"/>
-      <tag name="license" line="0" description="MIT License" link="https://opensource.org/licenses/mit-license.php"/>
+      <description></description>
+      <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
     </docblock>
     <namespace-alias name="FileNotExistsException">\Tools\Exception\FileNotExistsException</namespace-alias>
-    <class final="false" abstract="false" namespace="Thumber\Cake\Http\Exception" line="20" package="Default">
+    <class final="false" abstract="false" namespace="Thumber\Cake\Http\Exception" line="21" package="Default">
       <extends>\Tools\Exception\FileNotExistsException</extends>
       <name>ThumbNotFoundException</name>
       <full_name>\Thumber\Cake\Http\Exception\ThumbNotFoundException</full_name>
-      <docblock line="20">
+      <docblock line="21">
         <description>ThumbNotFoundException</description>
         <long-description></long-description>
-        <tag name="package" line="20" description="Default"/>
+        <tag name="package" line="21" description="Default"/>
       </docblock>
     </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
   </file>
-  <file path="Routing/Middleware/ThumbnailMiddleware.php" generated-path="Routing.Middleware.ThumbnailMiddleware.html" hash="0164fcbab8aa67cc79148f24a1e85929" package="Default">
+  <file path="Routing/Middleware/ThumbnailMiddleware.php" generated-path="Routing.Middleware.ThumbnailMiddleware.html" hash="03f4c76b121bb0ab6d42eaab023df2f1" package="Default">
     <docblock line="0">
-      <description>This file is part of cakephp-thumber.</description>
-      <long-description>Licensed under The MIT License
-For full copyright and license information, please see the LICENSE.txt
-Redistributions of files must retain the above copyright notice.</long-description>
-      <tag name="copyright" line="0" description="Copyright (c) Mirko Pagliai"/>
-      <tag name="link" line="0" description="https://github.com/mirko-pagliai/cakephp-thumber" link="https://github.com/mirko-pagliai/cakephp-thumber"/>
-      <tag name="license" line="0" description="MIT License" link="https://opensource.org/licenses/mit-license.php"/>
-      <tag name="since" line="0" description="1.6.0"/>
+      <description></description>
+      <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
     </docblock>
     <namespace-alias name="ResponseInterface">\Psr\Http\Message\ResponseInterface</namespace-alias>
     <namespace-alias name="ServerRequestInterface">\Psr\Http\Message\ServerRequestInterface</namespace-alias>
     <namespace-alias name="ThumbNotFoundException">\Thumber\Cake\Http\Exception\ThumbNotFoundException</namespace-alias>
-    <class final="false" abstract="false" namespace="Thumber\Cake\Routing\Middleware" line="23" package="Default">
+    <class final="false" abstract="false" namespace="Thumber\Cake\Routing\Middleware" line="24" package="Default">
       <extends/>
       <name>ThumbnailMiddleware</name>
       <full_name>\Thumber\Cake\Routing\Middleware\ThumbnailMiddleware</full_name>
-      <docblock line="23">
+      <docblock line="24">
         <description>Handles serving thumbnails</description>
         <long-description></long-description>
-        <tag name="package" line="23" description="Default"/>
+        <tag name="package" line="24" description="Default"/>
       </docblock>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Thumber\Cake\Routing\Middleware" line="32" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Thumber\Cake\Routing\Middleware" line="33" package="Default">
         <name>__invoke</name>
         <full_name>\Thumber\Cake\Routing\Middleware\ThumbnailMiddleware::__invoke()</full_name>
-        <docblock line="32">
+        <docblock line="33">
           <description>Serves thumbnail if the request matches one</description>
           <long-description></long-description>
-          <tag name="param" line="32" description="&lt;p&gt;The request&lt;/p&gt;" type="\Psr\Http\Message\ServerRequestInterface" variable="$request">
+          <tag name="param" line="33" description="&lt;p&gt;The request&lt;/p&gt;" type="\Psr\Http\Message\ServerRequestInterface" variable="$request">
             <type>\Psr\Http\Message\ServerRequestInterface</type>
           </tag>
-          <tag name="param" line="32" description="&lt;p&gt;The response&lt;/p&gt;" type="\Psr\Http\Message\ResponseInterface" variable="$response">
+          <tag name="param" line="33" description="&lt;p&gt;The response&lt;/p&gt;" type="\Psr\Http\Message\ResponseInterface" variable="$response">
             <type>\Psr\Http\Message\ResponseInterface</type>
           </tag>
-          <tag name="return" line="32" description="A response" type="\Psr\Http\Message\ResponseInterface">
+          <tag name="return" line="33" description="A response" type="\Psr\Http\Message\ResponseInterface">
             <type>\Psr\Http\Message\ResponseInterface</type>
           </tag>
-          <tag name="throws" line="32" description="" type="\Thumber\Cake\Http\Exception\ThumbNotFoundException">
+          <tag name="throws" line="33" description="" type="\Thumber\Cake\Http\Exception\ThumbNotFoundException">
             <type>\Thumber\Cake\Http\Exception\ThumbNotFoundException</type>
           </tag>
         </docblock>
@@ -666,47 +215,45 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         </argument>
       </method>
     </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
   </file>
-  <file path="Utility/ThumbCreator.php" generated-path="Utility.ThumbCreator.html" hash="86a777cb898b09948ed0a6fd9d2875d2" package="Default">
+  <file path="Utility/ThumbCreator.php" generated-path="Utility.ThumbCreator.html" hash="73fbc8169a461fd0f01f54a9a9487893" package="Default">
     <docblock line="0">
-      <description>This file is part of cakephp-thumber.</description>
-      <long-description>Licensed under The MIT License
-For full copyright and license information, please see the LICENSE.txt
-Redistributions of files must retain the above copyright notice.</long-description>
-      <tag name="copyright" line="0" description="Copyright (c) Mirko Pagliai"/>
-      <tag name="link" line="0" description="https://github.com/mirko-pagliai/cakephp-thumber" link="https://github.com/mirko-pagliai/cakephp-thumber"/>
-      <tag name="license" line="0" description="MIT License" link="https://opensource.org/licenses/mit-license.php"/>
-      <tag name="see" line="0" description="" link="https://github.com/mirko-pagliai/cakephp-thumber/wiki/How-to-uses-the-ThumbCreator-utility"/>
+      <description></description>
+      <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
     </docblock>
     <namespace-alias name="BadMethodCallException">\BadMethodCallException</namespace-alias>
     <namespace-alias name="Router">\Cake\Routing\Router</namespace-alias>
+    <namespace-alias name="Image">\Intervention\Image\Image</namespace-alias>
     <namespace-alias name="InvalidArgumentException">\InvalidArgumentException</namespace-alias>
     <namespace-alias name="ThumbManager">\Thumber\Cake\Utility\ThumbManager</namespace-alias>
     <namespace-alias name="NotReadableImageException">\Thumber\Exception\NotReadableImageException</namespace-alias>
     <namespace-alias name="UnsupportedImageTypeException">\Thumber\Exception\UnsupportedImageTypeException</namespace-alias>
     <namespace-alias name="BaseThumbCreator">\Thumber\ThumbCreator</namespace-alias>
     <namespace-alias name="NotWritableException">\Tools\Exception\NotWritableException</namespace-alias>
-    <class final="false" abstract="false" namespace="Thumber\Cake\Utility" line="31" package="Default">
+    <class final="false" abstract="false" namespace="Thumber\Cake\Utility" line="33" package="Default">
       <extends>\Thumber\ThumbCreator</extends>
       <name>ThumbCreator</name>
       <full_name>\Thumber\Cake\Utility\ThumbCreator</full_name>
-      <docblock line="31">
+      <docblock line="33">
         <description>Utility to create a thumb.</description>
         <long-description>Please, refer to the `README` file to know how to use the utility and to
 see examples.</long-description>
-        <tag name="package" line="31" description="Default"/>
+        <tag name="package" line="33" description="Default"/>
       </docblock>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Thumber\Cake\Utility" line="41" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Thumber\Cake\Utility" line="43" package="Default">
         <name>__construct</name>
         <full_name>\Thumber\Cake\Utility\ThumbCreator::__construct()</full_name>
-        <docblock line="41">
+        <docblock line="43">
           <description>Construct.</description>
           <long-description>It sets the file path and extension.</long-description>
-          <tag name="param" line="41" description="&lt;p&gt;Path of the image from which to create the&#10;thumbnail. It can be a relative path from &lt;code&gt;APP/webroot/img/&lt;/code&gt;, a full&#10;path or a remote url&lt;/p&gt;" type="string" variable="$path">
+          <tag name="param" line="43" description="&lt;p&gt;Path of the image from which to create the&#10;thumbnail. It can be a relative path from &lt;code&gt;APP/webroot/img/&lt;/code&gt;, a full&#10;path or a remote url&lt;/p&gt;" type="string" variable="$path">
             <type>string</type>
           </tag>
-          <tag name="uses" line="41" description="" link="\Thumber\Cake\Utility\ThumbManager::resolveFilePath()"/>
+          <tag name="uses" line="43" description="" link="\Thumber\Cake\Utility\ThumbManager::resolveFilePath()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$path</name>
@@ -714,34 +261,34 @@ see examples.</long-description>
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="Thumber\Cake\Utility" line="50" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Thumber\Cake\Utility" line="52" package="Default">
         <name>getImageInstance</name>
         <full_name>\Thumber\Cake\Utility\ThumbCreator::getImageInstance()</full_name>
-        <docblock line="50">
+        <docblock line="52">
           <description>Gets an `Image` instance</description>
           <long-description></long-description>
-          <tag name="return" line="50" description="" type="\Intervention\Image\Image">
+          <tag name="return" line="52" description="" type="\Intervention\Image\Image">
             <type>\Intervention\Image\Image</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Thumber\Cake\Utility" line="72" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Thumber\Cake\Utility" line="74" package="Default">
         <name>getUrl</name>
         <full_name>\Thumber\Cake\Utility\ThumbCreator::getUrl()</full_name>
-        <docblock line="72">
+        <docblock line="74">
           <description>Builds and returns the url for the generated thumbnail</description>
           <long-description></long-description>
-          <tag name="param" line="72" description="&lt;p&gt;If &lt;code&gt;true&lt;/code&gt;, the full base URL will be prepended to&#10;the result&lt;/p&gt;" type="boolean" variable="$fullBase">
+          <tag name="param" line="74" description="&lt;p&gt;If &lt;code&gt;true&lt;/code&gt;, the full base URL will be prepended to&#10;the result&lt;/p&gt;" type="boolean" variable="$fullBase">
             <type>boolean</type>
           </tag>
-          <tag name="return" line="72" description="" type="string">
+          <tag name="return" line="74" description="" type="string">
             <type>string</type>
           </tag>
-          <tag name="since" line="72" description="1.5.1"/>
-          <tag name="throws" line="72" description="" type="\InvalidArgumentException">
+          <tag name="since" line="74" description="1.5.1"/>
+          <tag name="throws" line="74" description="" type="\InvalidArgumentException">
             <type>\InvalidArgumentException</type>
           </tag>
-          <tag name="uses" line="72" description="" link="\Thumber\Cake\Utility\$target"/>
+          <tag name="uses" line="74" description="" link="\Thumber\Cake\Utility\$target"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$fullBase</name>
@@ -749,19 +296,19 @@ see examples.</long-description>
           <type>boolean</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Thumber\Cake\Utility" line="89" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Thumber\Cake\Utility" line="91" package="Default">
         <name>save</name>
         <full_name>\Thumber\Cake\Utility\ThumbCreator::save()</full_name>
-        <docblock line="89">
+        <docblock line="91">
           <description>Saves the thumbnail and returns its path</description>
           <long-description></long-description>
-          <tag name="param" line="89" description="&lt;p&gt;Options for saving&lt;/p&gt;" type="array" variable="$options">
+          <tag name="param" line="91" description="&lt;p&gt;Options for saving&lt;/p&gt;" type="array" variable="$options">
             <type>array</type>
           </tag>
-          <tag name="return" line="89" description="Thumbnail path" type="string">
+          <tag name="return" line="91" description="Thumbnail path" type="string">
             <type>string</type>
           </tag>
-          <tag name="see" line="89" description="" link="https://github.com/mirko-pagliai/cakephp-thumber/wiki/How-to-uses-the-ThumbCreator-utility#save"/>
+          <tag name="see" line="91" description="" link="https://github.com/mirko-pagliai/cakephp-thumber/wiki/How-to-uses-the-ThumbCreator-utility#save"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$options</name>
@@ -770,124 +317,31 @@ see examples.</long-description>
         </argument>
       </method>
     </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
   </file>
-  <file path="Command/ClearCommand.php" generated-path="Command.ClearCommand.html" hash="5b654a28acc4f741a4b2f512afdd8508" package="Default">
+  <file path="Command/ClearCommand.php" generated-path="Command.ClearCommand.html" hash="15478bec258927e3463b2ddd6a4f741a" package="Default">
     <docblock line="0">
-      <description>This file is part of cakephp-thumber.</description>
-      <long-description>Licensed under The MIT License
-For full copyright and license information, please see the LICENSE.txt
-Redistributions of files must retain the above copyright notice.</long-description>
-      <tag name="copyright" line="0" description="Copyright (c) Mirko Pagliai"/>
-      <tag name="link" line="0" description="https://github.com/mirko-pagliai/cakephp-thumber" link="https://github.com/mirko-pagliai/cakephp-thumber"/>
-      <tag name="license" line="0" description="MIT License" link="https://opensource.org/licenses/mit-license.php"/>
-      <tag name="since" line="0" description="1.7.0"/>
+      <description></description>
+      <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
     </docblock>
-    <namespace-alias name="Arguments">\Cake\Console\Arguments</namespace-alias>
-    <namespace-alias name="ConsoleIo">\Cake\Console\ConsoleIo</namespace-alias>
-    <namespace-alias name="ConsoleOptionParser">\Cake\Console\ConsoleOptionParser</namespace-alias>
-    <namespace-alias name="Exception">\Exception</namespace-alias>
-    <namespace-alias name="Command">\MeTools\Console\Command</namespace-alias>
-    <namespace-alias name="ThumbManager">\Thumber\Cake\Utility\ThumbManager</namespace-alias>
-    <class final="false" abstract="false" namespace="Thumber\Cake\Command" line="26" package="Default">
-      <extends>\MeTools\Console\Command</extends>
-      <name>ClearCommand</name>
-      <full_name>\Thumber\Cake\Command\ClearCommand</full_name>
-      <docblock line="26">
-        <description>Clears all thumbnails that have been generated from an image path</description>
-        <long-description></long-description>
-        <tag name="package" line="26" description="Default"/>
-      </docblock>
-      <property static="false" visibility="public" namespace="Thumber\Cake\Command" line="32" package="Default">
-        <name>$ThumbManager</name>
-        <full_name>\Thumber\Cake\Command\ClearCommand::$ThumbManager</full_name>
-        <default></default>
-        <docblock line="32">
-          <description>A `ThumbManager` instance</description>
-          <long-description></long-description>
-          <tag name="var" line="32" description="" type="\Thumber\Cake\Utility\ThumbManager" variable="">
-            <type>\Thumber\Cake\Utility\ThumbManager</type>
-          </tag>
-        </docblock>
-      </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Thumber\Cake\Command" line="39" package="Default">
-        <name>initialize</name>
-        <full_name>\Thumber\Cake\Command\ClearCommand::initialize()</full_name>
-        <docblock line="39">
-          <description>Hook method invoked by CakePHP when a command is about to be executed</description>
-          <long-description></long-description>
-          <tag name="return" line="39" description="" type="void">
-            <type>void</type>
-          </tag>
-          <tag name="uses" line="39" description="" link="\Thumber\Cake\Command\ClearCommand::$ThumbManager"/>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="Thumber\Cake\Command" line="49" package="Default">
-        <name>buildOptionParser</name>
-        <full_name>\Thumber\Cake\Command\ClearCommand::buildOptionParser()</full_name>
-        <docblock line="49">
-          <description>Hook method for defining this command's option parser</description>
-          <long-description></long-description>
-          <tag name="param" line="49" description="&lt;p&gt;The parser to be defined&lt;/p&gt;" type="\Cake\Console\ConsoleOptionParser" variable="$parser">
-            <type>\Cake\Console\ConsoleOptionParser</type>
-          </tag>
-          <tag name="return" line="49" description="" type="\Cake\Console\ConsoleOptionParser">
-            <type>\Cake\Console\ConsoleOptionParser</type>
-          </tag>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$parser</name>
-          <default></default>
-          <type>\Cake\Console\ConsoleOptionParser</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Thumber\Cake\Command" line="65" package="Default">
-        <name>execute</name>
-        <full_name>\Thumber\Cake\Command\ClearCommand::execute()</full_name>
-        <docblock line="65">
-          <description>Clears all thumbnails that have been generated from an image path</description>
-          <long-description></long-description>
-          <tag name="param" line="65" description="&lt;p&gt;The command arguments&lt;/p&gt;" type="\Cake\Console\Arguments" variable="$args">
-            <type>\Cake\Console\Arguments</type>
-          </tag>
-          <tag name="param" line="65" description="&lt;p&gt;The console io&lt;/p&gt;" type="\Cake\Console\ConsoleIo" variable="$io">
-            <type>\Cake\Console\ConsoleIo</type>
-          </tag>
-          <tag name="return" line="65" description="The exit code or null for success" type="integer|null">
-            <type>integer</type>
-            <type>null</type>
-          </tag>
-          <tag name="uses" line="65" description="" link="\Thumber\Cake\Command\ClearCommand::$ThumbManager"/>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$args</name>
-          <default></default>
-          <type>\Cake\Console\Arguments</type>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$io</name>
-          <default></default>
-          <type>\Cake\Console\ConsoleIo</type>
-        </argument>
-      </method>
-    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
   </file>
   <package name="Default" full_name="Default"/>
   <package name="global" full_name="global"/>
   <namespace name="Thumber" full_name="Thumber">
     <namespace name="Cake" full_name="Thumber\Cake">
-      <namespace name="Command" full_name="Thumber\Cake\Command"/>
       <namespace name="Http" full_name="Thumber\Cake\Http">
         <namespace name="Exception" full_name="Thumber\Cake\Http\Exception"/>
       </namespace>
       <namespace name="Routing" full_name="Thumber\Cake\Routing">
         <namespace name="Middleware" full_name="Thumber\Cake\Routing\Middleware"/>
       </namespace>
-      <namespace name="TestSuite" full_name="Thumber\Cake\TestSuite"/>
       <namespace name="Utility" full_name="Thumber\Cake\Utility"/>
-      <namespace name="View" full_name="Thumber\Cake\View">
-        <namespace name="Helper" full_name="Thumber\Cake\View\Helper"/>
-      </namespace>
     </namespace>
   </namespace>
   <deprecated count="0"/>
